@@ -1,0 +1,35 @@
+### YamlMime:Architecture
+metadata: 
+  title: Azure Architecture
+  description: Architecture page
+name: AI at the Edge with Azure Stack
+summary: With the Azure AI tools and cloud platform, the next generation of AI-enabled hybrid applications can run where your data lives. With Azure Stack, bring a trained AI model to the edge and integrate it with your applications for low-latency intelligence, with no tool or process changes for local applications.
+thumbnailUrl: https://docs.microsoft.com/en-us/azure/architecture/browse/thumbs/ai-at-the-edge.png
+azureCategories: 
+  - ai-machine-learning
+  - hybrid
+products:
+- ai-builder
+content: |
+  ## Architecture
+
+  [ ![Architecture diagram](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/media/ai-at-the-edge.png)](./media/ai-at-the-edge.png#lightbox)
+  >*Download an [SVG](./media/ai-at-the-edge.svg) of this architecture.*
+
+  ## Data Flow
+
+  1. Data scientists train a model using Azure Machine Learning workbench and an HDInsight cluster. The model is containerized and put into an Azure Container Registry.
+  1. The model is deployed to a Kubernetes cluster on Azure Stack.
+  1. End users provide data that's scored against the model.
+
+  ## Components
+
+  * [Machine Learning Studio](https://azure.microsoft.com/services/machine-learning-studio): Easily build, deploy, and manage predictive analytics solutions
+  * [HDInsight](https://azure.microsoft.com/services/hdinsight): Provision cloud Hadoop, Spark, R Server, HBase, and Storm clusters
+  * [Container Registry](https://azure.microsoft.com/services/container-registry): Store and manage container images across all types of Azure deployments
+
+  ## Next steps
+
+  * [Machine Learning Studio documentation](https://docs.microsoft.com/azure/machine-learning/service)
+  * [HDInsight documentation](https://docs.microsoft.com/azure/hdinsight)
+  * [Container Registry documentation](https://docs.microsoft.com/azure/container-registry)
